@@ -1,0 +1,156 @@
+.hidden{
+    display: none;
+}
+.page{
+    background: #80ced6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#telaCadastro{
+    background: #80ced6;
+}
+
+.navbar{
+    background: blue;
+    width: 100%;
+    height: 35px;
+}
+.navbar span{
+    font-size: 35px;
+}
+
+.login_Background{
+    width: 80%;
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.camposCadastro{
+    align-content: center;
+    width: 80%;
+}
+
+.Cabecalho{
+    font-size: 14px;
+    font-style: oblique;
+    color: black;        
+}
+
+#FotoeNome{
+    float: left;
+    width: 30%;
+    height: 15%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#Pontuacao{
+    background-color: aqua;
+    float: left;
+    width: 40%;
+    height: 15%;
+}
+
+#TextoCentralizado{
+    text-align: center;
+    font-weight: bold;
+}
+
+#conteudoLicao{
+    background-color: white;
+    margin-top: 30%;
+    width: 100%;
+    height: 40%;
+}
+
+#CabecalhoLicao{
+    margin: 1%;    
+}
+
+#Temporizador{
+    float: right;
+    width: 30%;
+    height: 15%;
+}
+
+#execSound{
+    width: auto;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;    
+    margin-top: 25%;
+    background-color: red;
+    
+}
+
+#conteudoOpcoesLicao{
+    background-color: red;
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+#btn_Confirma{
+    top: 90%;
+    width: auto;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;  
+    
+}
+
+.TextAlignRight{
+    text-align: right;
+}
+.TextAlignLeft{
+    text-align: left;
+}
+
+.tabela{
+    border: 0px;
+    margin: 5px;
+}
+
+.espacador20{
+    margin-top: 20%;
+    width: 100%;
+}
+.espacador40{
+    margin-top: 40%;
+    width: 100%;
+}
+
+.imgCentralizada{    
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;    
+    background-color: red;
+}
+
+.btnFullAlignLeft{
+    margin: 5;
+    float: left;
+    height: 30;
+    width: 33%;
+    
+}
+.btnFullAlignCenter{
+    margin: 5;
+    float: left;
+    width: 34%;
+    height: 30;
+    
+}
+.btnFullAlignRight{
+    margin: 5;
+    float: right;
+    height: 30;
+    width: 33%;
+    
+}

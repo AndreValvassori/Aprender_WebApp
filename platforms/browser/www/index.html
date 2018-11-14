@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Aprender App</title>
+    </head>
+    <body>
+        <div id="telaCadastro" class="page hidden">
+            <h1> Aprender! </h1>
+
+            <span>Cadastro</span>
+
+            <div class="camposCadastro">
+                <input id="input_CadastroNome" 	type="text" class="form-cadastro" placeholder="Nome Completo">
+                <input id="input_CadastroEmail" type="text" class="form-cadastro" placeholder="E-mail">
+                <input id="input_CadastroLogin" type="text" class="form-cadastro" placeholder="Login">
+                <input id="input_CadastroSenha" type="text" class="form-cadastro" placeholder="Senha">        
+            </div>
+            <div>                
+                <button id="frmcadastro_btnCadastro" class="btnCadastro" onclick="cadastro()">Cadastrar</button>
+            </div>        
+        </div>
+        
+        <div id="telaLogin" class="page">
+            <h1> Aprender! </h1>
+            
+            <span>Alfabetize seus filhos de maneira lúdica!</span>
+            
+            <div class="login_Background">
+                <h3>Nome de usuário</h3>
+                <input id="input_ulogin" type="text" class="form-login" placeholder="Nome de Usuário">
+                <h3>Senha</h3>
+                <input id="input_usenha" type="text" class="form-login" placeholder="Senha">
+                <div>
+                    <button id="frmlogin_BtnLogin" class="btnLogin" onclick="login()">Entrar</button>
+                    <button id="frmlogin_BtnLoginFace" class="btnLogin">Entrar com Facebook</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="telaCadastroDependente" class="page hidden">
+            <h1> Aprender! </h1>
+            
+            <span>Cadastro de Dependentes</span><br>
+            
+            <ul>
+                <li>André Valvassori</li>
+                <li>Ninja da Silva</li>
+            </ul>
+
+            <img src="img/profile_default.png" height="50" width="50"><br>
+            
+            <div class="login_Background">
+                <input type="text" 		id="frmCadastroDep_Nome" class="form-cadastro" placeholder="Nome Completo">
+                <input type="number" 	id="frmCadastroDep_Idade" class="form-cadastro" placeholder="Idade">
+                <input type="text" 		id="frmCadastroDep_Sexo" class="form-cadastro" placeholder="Sexo">
+                
+                <div>                    
+                  <input type="radioDep" name="Nivel_AlfabetizacaoDep" value="1">Nível 1 - Vogais<br>
+                  <input type="radioDep" name="Nivel_AlfabetizacaoDep" value="2">Nivel 2 - Abecedário<br>
+                  <input type="radioDep" name="Nivel_AlfabetizacaoDep" value="3">Nivel 3 - Sílabas Simples<br>
+                  <input type="radioDep" name="Nivel_AlfabetizacaoDep" value="4">Nivel 4 - Sílabas complexas e Junções
+                </div>
+                
+                <button id="frmCadastroDep_btnCadastro" class="btnCadastro" onclick="cadastroDependente()">Cadastrar Dependente</button>
+            </div>
+            
+        </div>
+             
+        <div id="telaLicoes" class="page hidden">
+            <h1> Aprender! </h1>            
+            <span>Lições em Andamento</span><br>            
+            <div class="login_Background">
+                
+                <ul>
+                    <li>
+                        1ª Aula: Vogais - <button id="frmlogin_BtnLogin" class="btnLogin">Iniciar</button>
+                    </li>
+                    <li>
+                        2ª Aula: Vogais - <button id="frmlogin_BtnLogin" class="btnLogin">Iniciar</button>
+                    </li>
+                    <li>
+                        3ª Aula: Vogais - <button id="frmlogin_BtnLogin" class="btnLogin">Iniciar</button>
+                    </li>
+                    <li>
+                        4ª Aula: Vogais - <button id="frmlogin_BtnLogin" class="btnLogin">Iniciar</button>
+                    </li>
+                    <li>
+                        5ª Aula: Vogais - <button id="frmlogin_BtnLogin" class="btnLogin">Iniciar</button>
+                    </li>
+                </ul>
+                
+                    <button id="frmlogin_BtnLogin" class="btnLogin">Pontuação</button>
+                
+                    <button id="frmlogin_BtnLogin" class="btnLogin">Próximo Nível</button>
+            </div>
+        </div>
+        
+        <div id="telaLicao" class="page hidden">
+            
+            <div id="CabecalhoLicao">
+                <div id="FotoeNome">                
+                    <img src="img/profile_default.png" height="75" width="75"><br>
+                    <span>André Valvassori</span>
+                </div>        
+
+                <div id="Pontuacao">
+                    <span id="TextoCentralizado">300</span>
+                </div>
+
+                <div id="Temporizador">
+                    <img src="img/cronometro.png" height="70" width="70"><br>     
+                    <span id="TextoCentralizado">58</span>
+                </div>
+            </div>
+
+
+                <div id="conteudoLicao">
+                    <div id="execSound">
+                        <img src="img/playsound.png" height="100" width="100"><br>                          
+                    </div>                    
+                </div>
+                
+            <div id="conteudoOpcoesLicao">            
+                    <div id="OpcoesLicao">
+                        <div id="OpcaoEsquerda">
+                            <button id="frmlogin_BtnLogin" class="btnLogin">A</button>
+                            <button id="frmlogin_BtnLogin" class="btnLogin">B</button>
+                            <button id="frmlogin_BtnLogin" class="btnLogin">C</button>
+                            <button id="frmlogin_BtnLogin" class="btnLogin">D</button>
+                        </div>
+                    </div>
+                <div id="btn_Confirma">                    
+                    <button id="frmlogin_BtnLogin" class="btnLogin">Confirmar Resposta</button>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div id="telaPontuacao" class="page hidden">
+            <center><h1> Aprender! </h1></center>
+            
+            <center><h3>Pontuação total</h3></center>
+            
+            <div class="tabela">
+                <table>
+                    <tr>
+                        <td class="TextAlignLeft" style="width:120px">Respostas:</td>
+                        <td class="TextAlignLeft" style="width:autox">6 respostas em 60 segundos!</td>
+                    </tr>
+                    <tr>
+                        <td class="TextAlignLeft">Pontuação Atual:</td>
+                        <td class="TextAlignLeft">330 Pontos</td>
+                    </tr>
+                    <tr>
+                        <td class="TextAlignLeft">Maior Pontuação</td>
+                        <td class="TextAlignLeft">550 Pontos</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="espacador40"></div>
+            <center><h2>Status</h2></center>
+            <img src="img/diamond.png" height="75" width="75" class="imgCentralizada" >
+            <div class="espacador40"></div>
+            <center><h3>Você está pronto para a próxima lição!</h3></center>
+            
+            <div class="espacador20"></div>
+            <div>                
+                <button id="frmlogin_BtnLogin" class="btnFullAlignLeft">Voltar ao Menu</button>
+                <button id="frmlogin_BtnLogin" class="btnFullAlignCenter">Repetir Lição</button>
+                <button id="frmlogin_BtnLogin" class="btnFullAlignRight">Próxima Lição</button>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</html>
