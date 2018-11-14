@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Index</a></li>
+          </ul>
+        </div>
+      </nav>
+        
+    <div class="col s6 z-depth-4 card-panel container center-align">
+      <form class="login-form">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <img src="images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
+            <p class="center login-form-text">Ensine seus filhos de maneira lúdica!</p>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="username" type="text">
+            <label for="username" class="center-align">Username</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="input-field col s12 m12 l12  login-text">
+              <input id="remember-me" type="checkbox">
+              <label for="remember-me">Remember me</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="index.html" class="btn waves-effect waves-light col s12">Login</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6 m6 l6">
+            <p class="margin medium-small"><a href="page-register.html">Register Now!</a></p>
+          </div>
+          <div class="input-field col s6 m6 l6">
+              <p class="margin right-align medium-small"><a href="page-forgot-password.html">Forgot password ?</a></p>
+          </div>          
+        </div>
+
+      </form>
+    </div>
+  
+    
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Index</a></li>
+  </ul>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+            });
+        </script>
+    </body>
+  </html>
