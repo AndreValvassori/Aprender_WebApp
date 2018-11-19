@@ -26,9 +26,17 @@ function login() {
             $.each(registros, function (i, registro) {               
                 
 				// Testando validação com Banco de dados
-                alert("Logou: "+registro.Nome);
+                alert("Logou: "+registro.Nome);                
+                
+                localStorage.setItem("User_Logado", 1);
+                localStorage.setItem("User_ID", registro.ID);
+                localStorage.setItem("User_Nome", registro.Nome);
+                localStorage.setItem("User_Login", registro.Login);
+                localStorage.setItem("User_Email", registro.Email);
+                localStorage.setItem("User_ts_Creat", registro._ts_Creat);
                 
                 console.log(registro);
+                console.log(localStorage.Nome);
                 
                 document.getElementById("telaLicoes").classList.remove('hidden');
 
